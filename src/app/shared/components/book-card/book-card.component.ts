@@ -1,0 +1,22 @@
+import {Component, Input, OnInit} from '@angular/core';
+
+@Component({
+  selector: 'app-book-card',
+  templateUrl: './book-card.component.html',
+  styleUrls: ['./book-card.component.scss']
+})
+export class BookCardComponent implements OnInit {
+  @Input() author: string;
+  @Input() title: string;
+  @Input() reviewStars: number;
+  @Input() reviewsNumber: number;
+  @Input() description: string;
+  @Input() currentPrice: number;
+  @Input() oldPrice: number;
+  @Input() imageUrl: string;
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
+}

@@ -1,0 +1,79 @@
+<div fxLayout="column" fxFlexFill class="bg-primary">
+  <div fxLayout="row"  fxFlex="20">
+    <div fxLayout="column" fxFlexFill>
+      <app-menu></app-menu>
+    </div>
+  </div>
+  <div fxLayout="row"  fxFlex="80" fxLayoutAlign="center">
+    <div fxLayout="column" fxFlex="80" style="background-color: #FFE0E2">
+      <div fxLayout="row" fxFlex="50">
+          <div fxLayout="column" fxFlex="100">
+            <div fxLayout="row" fxFlex="30" fxLayoutAlign="center end">
+              <span class="font-semi-bold font-size-25 color-black">BIG SUMMER SALE</span>
+            </div>
+            <div fxLayout="row" fxFlex="40" >
+              <div fxLayout="column" fxFlex="40" fxLayoutAlign="center end">
+                <span class="font-bold font-size-60 white font-shadow" >up</span>
+              </div>
+              <div fxLayout="column" fxFlex="20" fxLayoutAlign="end center">
+                <span class="font-black font-size-180 white font-shadow-value" >60</span>
+              </div>
+            </div>
+            <div fxLayout="row" fxFlex="30" fxLayoutAlign="end" >
+              <div fxLayout="column" fxFlex="40" fxLayoutAlign="center start">
+                <span class="font-bold font-size-60 white font-shadow" >%</span>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div fxLayout="row" fxFlex="50" class="p-b-30" fxLayoutGap="30px">
+        <img src="assets/icons/readers/number-one.svg" width="100%" height="100%">
+        <img src="assets/icons/readers/number-two.svg" width="100%" height="100%">
+        <img src="assets/icons/readers/number-three.svg" width="100%" height="100%">
+        <img src="assets/icons/readers/number-four.svg" width="100%" height="100%">
+
+      </div>
+    </div>
+  </div>
+  <div fxLayout="row" class="p-t-30" style="min-height: 80%">
+    <div fxLayout="column"  fxFlex="30" >
+      <div fxLayout="row"  >
+        <div fxLayout="column" fxFlexFill >
+          <div fxLayout="row" fxLayoutAlign="center" class="bg-gray-clair p-l-30">
+            <div fxLayout="column"  fxLayoutGap="18px"  class="p-t-30 p-b-30 p-l-50">
+              <button class="btn-transparent text-start color-black font-bold font-size-16" >
+                <span style="display: list-item; list-style-position: inside;">Bestsellers</span>
+              </button>
+              <button class="btn-transparent gray font-medium font-size-12 text-start">Art & Fashion</button>
+              <button class="btn-transparent gray font-medium font-size-12 text-start">Biography</button>
+              <button class="btn-transparent gray font-medium font-size-12 text-start">Business</button>
+              <button class="btn-transparent gray font-medium font-size-12 text-start">Children's</button>
+              <button class="btn-transparent gray font-medium font-size-12 text-start">Education</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="column" fxFlex="70" >
+      <div fxLayout="row wrap"  fxFlexFill fxLayoutGap="20px grid">
+        <div fxLayout="column" fxFlex="50" *ngFor="let book of booksList">
+          <app-book-card
+            [author]="book.author"
+            [title]="book.title"
+            [reviewStars]= "book.reviewStars"
+            [reviewsNumber]= "book.reviewsNumber"
+            [description]= "book.description"
+            [currentPrice]= "book.currentPrice"
+            [oldPrice]= "book.oldPrice"
+            [imageUrl]= "book.imageUrl"
+          >
+
+          </app-book-card>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
