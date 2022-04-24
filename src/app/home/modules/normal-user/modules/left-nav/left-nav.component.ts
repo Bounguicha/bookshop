@@ -8,8 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class LeftNavComponent implements OnInit {
 
   constructor() { }
-
+  bookListCategories = [
+    'Bestsellers',
+    'Art & Fashion',
+    'Biography',
+    'Business',
+    'Children\'s',
+    'Education'
+  ]
+  selectedCategory = 'Bestsellers'
   ngOnInit(): void {
   }
-
+  changeCategory(category) {
+    this.selectedCategory = category;
+  }
 }

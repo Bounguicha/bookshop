@@ -1,1 +1,14 @@
-<p>left-nav works!</p>
+<div fxLayout="row"  >
+  <div fxLayout="column" fxFlexFill >
+    <div fxLayout="row" fxLayoutAlign="center" class="bg-gray-clair p-l-30">
+      <div fxLayout="column"   fxLayoutGap="18px"  class="p-t-30 p-b-30 p-l-50">
+        <button
+          *ngFor="let category of bookListCategories"
+          [ngClass]="selectedCategory === category ? 'btn-transparent text-start color-black font-bold font-size-16' : 'btn-transparent gray font-medium font-size-12 text-start'"
+          (click)="changeCategory(category)">
+          <span style="display: list-item; list-style-position: inside;">{{category}}</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

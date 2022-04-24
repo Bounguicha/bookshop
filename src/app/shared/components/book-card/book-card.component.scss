@@ -23,3 +23,8 @@
   border: 1px solid $gigas;
   background-color: white;
 }
+.custom-dialog-container {
+  .mat-dialog-container {
+    padding: 15px !important;
+  }
+}

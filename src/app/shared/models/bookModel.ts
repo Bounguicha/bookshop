@@ -1,6 +1,7 @@
 import {Input} from "@angular/core";
 
 export interface BookModel {
+  book_code: string;
   author: string;
   title: string;
   reviewStars: number;

@@ -9,6 +9,7 @@ export class BookService {
   constructor() { }
   books: BookModel[] = [
     {
+      book_code: `BOOK-${Math.floor(Math.random() * (99999 - 10000) + 10000)}`,
       author: 'Author 1',
       title: 'Title 1',
       reviewStars: 3,
@@ -19,6 +20,7 @@ export class BookService {
       imageUrl: 'https://www.lasalvetat31.fr/wp-content/uploads/2019/09/Affiche-salon-du-livre-pdf.jpg',
     },
     {
+      book_code: `BOOK-${Math.floor(Math.random() * (99999 - 10000) + 10000)}`,
       author: 'Author 2',
       title: 'Title 2',
       reviewStars: 4,
@@ -29,6 +31,7 @@ export class BookService {
       imageUrl: 'assets/img/card-example.jpg',
     },
     {
+      book_code: `BOOK-${Math.floor(Math.random() * (99999 - 10000) + 10000)}`,
       author: 'Author 3',
       title: 'Title 3',
       reviewStars: 5,
@@ -39,6 +42,7 @@ export class BookService {
       imageUrl: 'https://fredsochard.files.wordpress.com/2018/06/affiche_insecte-filet.jpg',
     },
     {
+      book_code: `BOOK-${Math.floor(Math.random() * (99999 - 10000) + 10000)}`,
       author: 'Author 4',
       title: 'Title 4',
       reviewStars: 3,
@@ -49,6 +53,7 @@ export class BookService {
       imageUrl: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbcgJOAKCjlXu4nAW_KJAhs8AI53-qoQXgfA&usqp=CAU',
     },
     {
+      book_code: `BOOK-${Math.floor(Math.random() * (99999 - 10000) + 10000)}`,
       author: 'Author 5',
       title: 'Title 5',
       reviewStars: 5,
