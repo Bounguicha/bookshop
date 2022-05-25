@@ -1,0 +1,30 @@
+@import "src/assets/styles/variables";
+.font-shadow {
+  text-shadow: 0 0 0 #534FD2,
+  3px 3px 0 #534FD2,
+  0 0 0 #534FD2,
+  0 0 0 #534FD2;
+}
+.font-shadow-value {
+  text-shadow: 0 0 0 #534FD2,
+  8px 8px 0 #534FD2,
+  0 0 0 #534FD2,
+  0 0 0 #534FD2;
+}
+.custom.mat-card{
+  margin: 0;
+  padding: 0;
+}
+.card-size {
+  width: 425px;
+  height: 300px;
+}
+.btn-buy-now {
+  border: 1px solid $gigas;
+  background-color: white;
+}
+.custom-dialog-container {
+  .mat-dialog-container {
+    padding: 15px !important;
+  }
+}

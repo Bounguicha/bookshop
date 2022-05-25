@@ -1,0 +1,35 @@
+<div fxLayout="column" fxFlexFill class="custom-dialog-container" fxLayoutGap="6px" >
+  <div fxLayout="row" fxFlex="60" fxLayoutGap="12px">
+    <div fxLayout="column" fxFlex="50">
+      <img [src]="bookData['imageUrl']"  height="100%">
+    </div>
+    <div fxLayout="column" fxFlex="50" class="p-t-10">
+      <div fxLayout="row" fxFlex="20">
+        <span class="font-bold font-size-16 color-black">{{bookData['title']}}</span>
+      </div>
+      <div fxLayout="row" fxFlex="20">
+        <span class="font-size-10 font-medium color-black text-start line-height-1">Is now in your cart with 2 other items.</span>
+      </div>
+      <div fxLayout="row" fxLayoutGap="5px">
+        <span class="font-semi-bold font-size-20 color-black">${{bookData['currentPrice']}}</span>
+        <span class="font-size-20 font-normal color-black">total</span>
+      </div>
+
+    </div>
+  </div>
+  <div fxLayout="row" fxFlex="10" fxLayoutGap="10px" fxLayoutAlign="center end">
+    <img src="assets/icons/green-tick.svg" height="19px" width="19px">
+    <span class="font-semi-bold font-size-16 green p-t-5" >AVAILABLE</span>
+  </div>
+  <div fxLayout="row" fxFlex="15">
+    <button class="btn-keep-shopping full-width " mat-dialog-close>
+      <span class="gigas font-bold font-size-12">KEEP SHOPPING</span>
+    </button>
+  </div>
+  <div fxLayout="row" fxFlex="15">
+    <button class="btn-check-out full-width " routerLink="/checkout">
+      <span class="primary font-bold font-size-12">CHECKOUT({{selectedBooksNumber}} ITEMS)</span>
+    </button>
+
+  </div>
+</div>

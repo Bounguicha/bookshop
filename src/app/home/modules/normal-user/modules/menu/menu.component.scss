@@ -1,0 +1,8 @@
+@import "src/assets/styles/variables";
+.button:hover {
+  background-color: $secondColor;
+  color: white;
+}
+.height-90 {
+  height: 90%;
+}

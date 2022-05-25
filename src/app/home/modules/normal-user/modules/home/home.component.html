@@ -1,0 +1,35 @@
+<div fxLayout="column" fxFlexFill class="bg-primary">
+  <div fxLayout="row"  fxFlex="100" fxLayoutAlign="center">
+      <app-poster
+        fxFlex="80"
+        fxLayout="column"
+        style="background-color: #FFE0E2" >
+      </app-poster>
+  </div>
+  <div fxLayout="row" class="p-t-30" style="min-height: 80%">
+    <div fxLayout="column"  fxFlex="30" >
+      <app-left-nav></app-left-nav>
+    </div>
+    <div fxLayout="column" fxFlex="70" >
+      <div fxLayout="row wrap"  fxFlexFill fxLayoutGap="20px grid">
+        <div fxLayout="column" fxFlex="50" *ngFor="let book of booksList">
+          <app-book-card
+            [author]="book.author"
+            [title]="book.title"
+            [reviewStars]= "book.reviewStars"
+            [reviewsNumber]= "book.reviewsNumber"
+            [description]= "book.description"
+            [currentPrice]= "book.currentPrice"
+            [oldPrice]= "book.oldPrice"
+            [imageUrl]= "book.imageUrl"
+            (selectedCard)="getSelectedCards($event)"
+          >
+
+          </app-book-card>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>

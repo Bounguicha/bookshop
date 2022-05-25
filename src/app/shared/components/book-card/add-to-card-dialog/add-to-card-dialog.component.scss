@@ -1,0 +1,23 @@
+@import "src/assets/styles/variables";
+.green {
+  color: #00a64c;
+}
+.btn-keep-shopping {
+  border-radius: 20px;
+  border: 1px solid $gigas;
+  background-color: white;
+  margin: 4px 2px;
+}
+.btn-check-out {
+  border-radius: 20px;
+  border: 1px solid $secondColor;
+  background-color: $gigas;
+  margin: 4px 2px;
+}
+.custom-dialog-container {
+  .mat-dialog-container {
+    padding: 15px !important;
+  }
+}
+
+

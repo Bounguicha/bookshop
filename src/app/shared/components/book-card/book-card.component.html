@@ -1,0 +1,37 @@
+<mat-card class="custom card-size">
+  <div fxLayout="column" fxFlex="50">
+    <img [src]="imageUrl" height="100%">
+  </div>
+  <div fxLayout="column" fxFlex="50" class="p-30">
+    <div fxLayout="row">
+      <span class="font-size-10 gray">{{author}}</span>
+    </div>
+    <div fxLayout="row" fxFlex="10">
+      <span class="font-bold font-size-16 color-black">{{title}}</span>
+    </div>
+    <div fxLayout="row" fxFlex="10" fxLayoutGap="6px">
+      <div fxLayout="column" fxFlex="50">
+        <app-reviews-level [level]="reviewStars"></app-reviews-level>
+      </div>
+      <div fxLayout="column" fxFlex="50">
+        <span class="gray font-size-10">{{reviewsNumber}} review</span></div>
+    </div>
+    <div fxLayout="row" fxFlex="35" fxLayoutAlign=" center">
+      <span class="font-size-10 gray text-start line-height-1">{{description}}</span>
+    </div>
+    <div fxLayout="row" fxFlex="15" fxLayoutGap="6px">
+      <div fxLayout="column">
+        <span class="font-bold font-size-13 color-black">${{currentPrice}}</span>
+      </div>
+      <div fxLayout="column">
+        <span class="font-semi-bold font-size-13 silver">${{oldPrice}}</span>
+      </div>
+    </div>
+    <div fxLayout="row" fxFlex="20">
+      <button class="btn-buy-now full-width" (click)="openAddToCardDialog()">
+        <span class="gigas font-bold font-size-8">ADD TO CARD</span>
+      </button>
+    </div>
+  </div>
+
+</mat-card>
