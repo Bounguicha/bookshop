@@ -29,8 +29,11 @@
             <div fxLayout="column" fxLayoutAlign="center" fxFlex="5">
               <img src="assets/icons/search.svg" width="15" height="15">
             </div>
-            <div fxLayout="column" fxLayoutAlign="center" fxFlex="5">
-              <img src="assets/icons/shop-bag.svg" width="15" height="15" >
+            <div fxLayout="column" fxLayoutAlign="center" fxFlex="5" >
+              <div fxLayout="row" matBadgeSize="small" [matBadge]="selectedBooksNumber.toString()" matBadgeColor="warn" [matBadgeHidden]="selectedBooksNumber === 0" >
+                <img src="assets/icons/shop-bag.svg" width="15" height="15"  >
+
+              </div>
             </div>
           </div>
         </div>

@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b59cfb73-f76d-4aec-8285-088449fc72fa" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/core/services/book.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/core/services/book.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/home-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/home-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/home.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/home.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/modules/normal-user/modules/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/modules/normal-user/modules/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/modules/normal-user/modules/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/modules/normal-user/modules/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/modules/normal-user/modules/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/modules/normal-user/modules/menu/menu.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/modules/normal-user/modules/menu/menu.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/modules/normal-user/modules/menu/menu.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/modules/normal-user/normal-user-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/modules/normal-user/normal-user-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/modules/normal-user/normal-user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/modules/normal-user/normal-user.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/shared/components/book-card/add-to-card-dialog/add-to-card-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/book-card/add-to-card-dialog/add-to-card-dialog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/components/book-card/add-to-card-dialog/add-to-card-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/book-card/add-to-card-dialog/add-to-card-dialog.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/components/book-card/book-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/components/book-card/book-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/shared/shared.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +93,14 @@
       <workItem from="1650713031217" duration="2407000" />
       <workItem from="1650757001999" duration="5980000" />
       <workItem from="1650800292053" duration="7193000" />
+      <workItem from="1650841461660" duration="6429000" />
+      <workItem from="1651136982157" duration="611000" />
+      <workItem from="1651217857755" duration="1521000" />
+      <workItem from="1651321386987" duration="706000" />
+      <workItem from="1651403973279" duration="6137000" />
+      <workItem from="1651649205712" duration="156000" />
+      <workItem from="1653161012201" duration="1613000" />
+      <workItem from="1653290487189" duration="124000" />
     </task>
     <servers />
   </component>

@@ -1,12 +1,11 @@
 import { Injectable } from '@angular/core';
 import {BookModel} from "../../shared/models/bookModel";
+import {BehaviorSubject, Subject} from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class BookService {
-
-  constructor() { }
   books: BookModel[] = [
     {
       book_code: `BOOK-${Math.floor(Math.random() * (99999 - 10000) + 10000)}`,
@@ -64,7 +63,20 @@ export class BookService {
       imageUrl: 'https://www.starwarsnewsnet.com/wp-content/uploads/2022/01/BobaFettPoster2.jpg',
     }
   ]
+  shopCardProduct$: Subject<BookModel[]>;
+  //array behind the products in the cart
+  selectedBooks : BookModel[] = new Array<BookModel>() ;
+  constructor() {
+    this.shopCardProduct$ = new BehaviorSubject<any>(new Array<any>())
+  }
+
   getBooks() {
     return this.books;
+  }
+  addToCart(book: BookModel) {
+    this.selectedBooks.push(book);
+    console.log('selected books array', this.selectedBooks);
+    this.shopCardProduct$.next(this.selectedBooks);
+    console.log('shopCardProduct', this.shopCardProduct$);
   }
 }

@@ -2,7 +2,7 @@
 @import "./assets/styles/variables.scss";
 @import "./assets/styles/app";
 html, body {
-  width: 100%;
+  min-width: fit-content;
   height: 100%;
   margin: 0;
   font-family: $bodyFont;

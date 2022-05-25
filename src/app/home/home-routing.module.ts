@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import {NormalUserComponent} from "./modules/normal-user/normal-user.component";
 
 
 const routes: Routes = [
@@ -9,7 +10,13 @@ const routes: Routes = [
   },
   {
     path: '',
-    loadChildren: () => import('./modules/normal-user/normal-user.module').then(m => m.NormalUserModule),
+    component: NormalUserComponent,
+    children: [
+      {
+        path: '',
+        loadChildren: () => import('./modules/normal-user/normal-user.module').then(m => m.NormalUserModule),
+      }
+    ]
   },
 ];
 

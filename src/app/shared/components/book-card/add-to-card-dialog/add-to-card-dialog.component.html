@@ -22,13 +22,13 @@
     <span class="font-semi-bold font-size-16 green p-t-5" >AVAILABLE</span>
   </div>
   <div fxLayout="row" fxFlex="15">
-    <button class="btn-keep-shopping full-width " >
+    <button class="btn-keep-shopping full-width " mat-dialog-close>
       <span class="gigas font-bold font-size-12">KEEP SHOPPING</span>
     </button>
   </div>
   <div fxLayout="row" fxFlex="15">
-    <button class="btn-check-out full-width " >
-      <span class="primary font-bold font-size-12">CHECKOUT</span>
+    <button class="btn-check-out full-width " routerLink="/checkout">
+      <span class="primary font-bold font-size-12">CHECKOUT({{selectedBooksNumber}} ITEMS)</span>
     </button>
 
   </div>

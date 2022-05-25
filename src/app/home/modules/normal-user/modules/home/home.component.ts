@@ -18,4 +18,9 @@ export class HomeComponent implements OnInit {
   getBooks() {
     return this.bookService.getBooks();
   }
+
+  getSelectedCards(event: any) {
+    console.log('event', event);
+    this.bookService.addToCart(event)
+  }
 }

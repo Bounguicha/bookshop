@@ -1,6 +1,8 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, Input, OnInit, Output} from '@angular/core';
 import {MatDialog} from "@angular/material/dialog";
 import {AddToCardDialogComponent} from "./add-to-card-dialog/add-to-card-dialog.component";
+import {BookModel} from "../../models/bookModel";
+import {Subject} from "rxjs";
 
 @Component({
   selector: 'app-book-card',
@@ -17,7 +19,8 @@ export class BookCardComponent implements OnInit {
   @Input() oldPrice: number;
   @Input() imageUrl: string;
   @Input() bookCode: string;
-
+  @Output() selectedCard = new Subject<BookModel[]>();
+  selectCardsArray = [];
   constructor(
     private dialog: MatDialog,
   ) { }
@@ -36,9 +39,21 @@ export class BookCardComponent implements OnInit {
       },
       panelClass: 'custom-dialog-container'
   });
-
+    this.selectCardsArray.push({
+      author: this.author,
+       title: this.title,
+       reviewStars: this.reviewStars,
+       reviewsNumber: this.reviewsNumber,
+       description: this.description,
+       currentPrice: this.currentPrice,
+       oldPrice: this.oldPrice,
+       imageUrl: this.imageUrl,
+       bookCode: this.bookCode,
+    });
+    this.selectedCard.next(this.selectCardsArray);
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed');
+
     });
   }
 }

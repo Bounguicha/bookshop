@@ -10,6 +10,9 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatCardModule} from "@angular/material/card";
 import {SharedModule} from "../../../shared/shared.module";
 import { PosterComponent } from './modules/poster/poster.component';
+import {MatBadgeModule} from "@angular/material/badge";
+import { NormalUserComponent } from './normal-user.component';
+import { CheckoutComponent } from './modules/checkout/checkout.component';
 
 
 @NgModule({
@@ -18,14 +21,17 @@ import { PosterComponent } from './modules/poster/poster.component';
     HomeComponent,
     LeftNavComponent,
     PosterComponent,
+    NormalUserComponent,
+    CheckoutComponent,
   ],
-    imports: [
-        CommonModule,
-        FlexLayoutModule,
-        NormalUserRoutingModule,
-        MatToolbarModule,
-        MatCardModule,
-        SharedModule
-    ]
+  imports: [
+    CommonModule,
+    FlexLayoutModule,
+    NormalUserRoutingModule,
+    MatToolbarModule,
+    MatCardModule,
+    SharedModule,
+    MatBadgeModule
+  ]
 })
 export class NormalUserModule { }
